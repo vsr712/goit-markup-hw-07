@@ -39,17 +39,17 @@
     background-color: var(--section-color-light2);
     padding: 6px 22px;
     transition: color var(--transition-dur-and-func),
-        background-color var(--transition-dur-and-func),
-        box-shadow var(--transition-dur-and-func);
-}
+    background-color var(--transition-dur-and-func),
+    box-shadow var(--transition-dur-and-func);
 
-.modal-open-btn-portfolio:hover,
-.modal-open-btn-portfolio:focus {
-    color: var(--primary-text-color-light);
-    background: var(--aczent-font);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    &:hover,
+    &:focus {
+        color: var(--primary-text-color-light);
+        background: var(--accent-font);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
 }
 
 .title-portfolio {
@@ -76,7 +76,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 30px;
-
 }
 
 .images-img-wrapper {
@@ -101,11 +100,10 @@
     transition: transform 250ms linear;
     padding: 63px 24px;
 
-}
-
-.images-link:hover .overlay,
-.images-link:focus .overlay {
-    transform: translate(0%);
+    .images-link:hover &,
+    .images-link:focus & {
+        transform: translate(0%);
+    }
 }
 
 .images-portfolio-item {
@@ -127,6 +125,6 @@
 .images-link:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-        0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }

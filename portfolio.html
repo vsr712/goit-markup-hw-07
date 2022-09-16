@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <!--header-->
@@ -29,40 +29,44 @@
             <span class="logo1">Web</span><span class="logo2">Studio</span></a
           >
           <ul class="menu list">
-            <li class="menu-item">
-              <a class="menu-link link" href="./index.html">Студія</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="./index.html">Студія</a>
             </li>
-            <li class="menu-item">
+            <li class="menu__item">
               <a
-                class="menu-link menu-link-active current link"
+                class="menu__link menu__link_current link"
                 href="./portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="#contacts">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
 
         <!--contact-->
 
-        <ul class="menu-contact list">
-          <li class="menu-item-contact">
-            <a class="contact-email link" href="mailto:info@devstudio.com"
-              ><svg lang="en" aria-label="envelope icon" class="envelope-icon">
+        <ul class="contact list">
+          <li class="contact__item">
+            <a class="contact__email link" href="mailto:info@devstudio.com"
+              ><svg
+                lang="en"
+                aria-label="envelope icon"
+                class="contact__envelope"
+              >
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com>
             </a>
           </li>
 
-          <li class="menu-item-contact">
-            <a class="contact-phone-number link" href="tel:+380961111111"
+          <li class="contact__item">
+            <a class="contact__phone link" href="tel:+380961111111"
               ><svg
                 lang="en"
                 aria-label="icon-smartphone icon"
-                class="smartphone-icon"
+                class="contact__smartphone"
               >
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -330,14 +334,14 @@
 
     <!--footer-->
 
-    <footer id="contacts" class="page-footer">
+    <footer class="page-footer">
       <div class="container container-footer">
         <div class="footer">
-          <a class="logo-footer link" href="./index.html"
+          <a class="footer-logo link" href="./index.html"
             ><span class="logo3">Web</span><span class="logo4">Studio</span></a
           >
           <ul class="footer list">
-            <li class="footer-item">
+            <li class="footer__item">
               <a
                 class="maps link"
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -346,13 +350,13 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="footer-item">
-              <a class="contact-email1 link" href="mailto:info@devstudio.com"
+            <li class="footer__item">
+              <a class="footer__email1 link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="footer-item">
-              <a class="contact-phone-number1 link" href="tel:+380961111111"
+            <li class="footer__item">
+              <a class="footer__phone1 link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>

@@ -69,16 +69,16 @@
     background-color: var(--primary-text-color-light);
     fill: #AFB1B8;
     transition: background-color var(--transition-dur-and-func), fill var(--transition-dur-and-func);
-}
 
-.social-list-link:hover,
-.social-list-link:focus {
-    background-color: var(--aczent-font);
-}
+    &:hover,
+    &:focus {
+        background-color: var(--accent-font);
+    }
 
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-    fill: var(--primary-text-color-light);
+    &:hover .social-list-icon,
+    &:focus .social-list-icon {
+        fill: var(--primary-text-color-light);
+    }   
 }
 
 .social-list-icon {

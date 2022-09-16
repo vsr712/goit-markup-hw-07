@@ -22,16 +22,16 @@
     column-gap: 50px;
 }
 
-.menu-contact {
+.contact {
     display: flex;
     margin-left: auto;
 }
 
-.menu-item-contact {
+.contact__item {
     margin-right: 30px;
 }
 
-.menu-link {
+.menu__link {
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
@@ -39,19 +39,19 @@
     letter-spacing: 0.02em;
     color: var(--primary-text-color-dark);
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-font);
+    }
 }
 
-.menu-link:hover,
-.menu-link:focus {
-    color: var(--aczent-font);
-}
-
-.menu-item {
+.menu__item {
     position: relative;
-    color: var(--aczent-font);
+    color: var(--accent-font);
 }
 
-.menu-item .current::after {
+.menu__link_current::after {
     position: absolute;
     display: block;
     content: "";
@@ -63,14 +63,14 @@
     border-radius: 2px;
 }
 
-.envelope-icon {
+.contact__envelope {
     width: 16px;
     height: 12px;
     margin-right: 10px;
 
 }
 
-.contact-email {
+.contact__email {
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
@@ -78,25 +78,25 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
     fill: currentColor;
-
     display: flex;
     align-items: center;
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-font);
+    }
 }
 
-.contact-email:hover,
-.contact-email:focus {
-    color: var(--aczent-font);
-}
-
-.smartphone-icon {
+.contact__smartphone {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-
 }
 
-.contact-phone-number {
+.contact__phone {
+    display: flex;
+    align-items: center;
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
@@ -104,12 +104,11 @@
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-dark);
     fill: currentColor;
-    display: flex;
-    align-items: center;
     transition: color var(--transition-dur-and-func);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-font);
+    }
 }
 
-.contact-phone-number:hover,
-.contact-phone-number:focus {
-    color: var(--aczent-font);
-}

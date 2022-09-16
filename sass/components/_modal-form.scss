@@ -1,8 +1,6 @@
 .modal-form-title {
+    @include font(20px, 700, 23px);
     font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
     text-align: center;
     color: var(--primary-text-color-dark);
     margin-bottom: 12px;
@@ -35,6 +33,12 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color var(--transition-dur-and-func);
+
+    &:focus {
+        outline: none;
+        border: 1px solid var(--accent-font);
+        border-radius: 4px;
+    }
 }
 
 .modal-form-input-wrapper {
@@ -51,17 +55,10 @@
     height: 18px;
     color: var(--primary-text-color-dark);
     transition: fill var(--transition-dur-and-func), border var(--transition-dur-and-func);
-}
 
-.modal-form-input:focus+.modal-form-input-icon {
-    fill: var(--aczent-font);
-}
-
-.modal-form-input:focus {
-    outline: none;
-    border: 1px solid var(--aczent-font);
-    border-radius: 4px;
-
+    .modal-form-input:focus + & {
+        fill: var(--accent-font);
+    }
 }
 
 .modal-form-message {
@@ -75,22 +72,20 @@
     transition: border-color var(--transition-dur-and-func);
     color: var(--tertiary-text-color-dark);
 
-}
+    &::placeholder {
+        outline: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 
-.modal-form-message::placeholder {
-    outline: none;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-
-}
-
-.modal-form-message:focus {
-    outline: none;
-    border-color: var(--aczent-font);
+    &:focus {
+        outline: none;
+        border-color: var(--accent-font);
+    }
 }
 
 .modal-form-own-checkbox {
@@ -98,33 +93,29 @@
     height: 15px;
     background: #FFFFFF;
     border: 2px solid #212121;
-
     cursor: pointer;
     margin-right: 9px;
+
+    .modal-form-check:checked + & {
+        background-color: var(--accent-font);
+        border: none;
+        border-radius: 2px;
+    }
 }
 
 .modal-form-own-checkbox-icon {
     display: none;
     fill: var(--primary-text-color-light);
+
+    .modal-form-check:checked+.modal-form-own-checkbox & {
+        display: block;
+    }
 }
 
 .modal-form-check {
     position: absolute;
     appearance: none;
 }
-
-.modal-form-check:checked+.modal-form-own-checkbox {
-    background-color: var(--aczent-font);
-    border: none;
-    border-radius: 2px;
-
-
-}
-
-.modal-form-check:checked+.modal-form-own-checkbox .modal-form-own-checkbox-icon {
-    display: block;
-}
-
 
 .modal-form-check-field {
     display: flex;
@@ -137,10 +128,8 @@
 }
 
 .modal-form-check-field-terms {
-    color: var(--aczent-font);
+    color: var(--accent-font);
 }
-
-
 
 .modal-form-submit {
     font-weight: 700;
@@ -155,17 +144,17 @@
     width: 200px;
     height: 50px;
     color: var(--primary-text-color-light);
-    background-color: var(--aczent-font);
+    background-color: var(--accent-font);
     border-radius: 4px;
     border: none;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
-}
 
-.modal-form-submit:hover,
-.modal-form-submit:focus {
-    background-color: var(--aczent-font-active);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-font-active);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }

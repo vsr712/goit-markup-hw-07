@@ -1,4 +1,4 @@
-.section-title {
+.hero {
     width: 1600px;
     height: 600px;
     padding-top: 200px;
@@ -10,14 +10,14 @@
     margin-right: auto;
 }
 
-.container-title {
+.hero__container {
     width: 696px;
     height: 120px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.title {
+.hero__title {
     font-weight: 900;
     font-style: normal;
     font-size: 44px;
@@ -42,17 +42,17 @@
     width: 216px;
     height: 50px;
     color: var(--primary-text-color-light);
-    background-color: var(--aczent-font);
+    background-color: var(--accent-font);
     border-radius: 4px;
     border: none;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
     transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
-}
 
-.modal-open-btn:hover,
-.modal-open-btn:focus {
-    background-color: var(--aczent-font-active);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-font-active);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }

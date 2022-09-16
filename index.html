@@ -16,54 +16,51 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="css/main.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!--header-->
 
     <header class="page-header">
       <div class="container page-header-container">
-        <!--nav-->
-
         <nav class="page-navigation">
           <a class="logo link" href="./index.html">
             <span class="logo1">Web</span><span class="logo2">Studio</span></a
           >
           <ul class="menu list">
-            <li class="menu-item">
-              <a
-                class="menu-link menu-link-active current link"
-                href="./index.html"
+            <li class="menu__item">
+              <a class="menu__link menu__link_current link" href="./index.html"
                 >Студія</a
               >
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="./portfolio.html">Портфоліо</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="./portfolio.html">Портфоліо</a>
             </li>
-            <li class="menu-item">
-              <a class="menu-link link" href="#contacts">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
 
-        <!--contact-->
-
-        <ul class="menu-contact list">
-          <li class="menu-item-contact">
-            <a class="contact-email link" href="mailto:info@devstudio.com"
-              ><svg lang="en" aria-label="envelope icon" class="envelope-icon">
+        <ul class="contact list">
+          <li class="contact__item">
+            <a class="contact__email link" href="mailto:info@devstudio.com"
+              ><svg
+                lang="en"
+                aria-label="envelope icon"
+                class="contact__envelope"
+              >
                 <use href="./images/sprite.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com>
             </a>
           </li>
 
-          <li class="menu-item-contact">
-            <a class="contact-phone-number link" href="tel:+380961111111"
+          <li class="contact__item">
+            <a class="contact__phone link" href="tel:+380961111111"
               ><svg
                 lang="en"
                 aria-label="icon-smartphone icon"
-                class="smartphone-icon"
+                class="contact__smartphone"
               >
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -78,9 +75,9 @@
     <main>
       <!--hero-->
 
-      <section class="section-title title-light">
-        <div class="container-title">
-          <h1 class="title">Ефективні рішення для вашого бізнесу</h1>
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="modal-open-btn" data-modal-open>
             Замовити послугу
           </button>
@@ -89,70 +86,74 @@
 
       <!--text-->
 
-      <section class="section section-text">
+      <section class="section">
         <div class="container">
           <h2 class="text-visually-hidden">Наші переваги</h2>
 
           <ul class="text list">
-            <li class="text-item">
+            <li class="text__item">
               <div class="group-list-link">
                 <svg
                   lang="en"
                   aria-label="antenna icon"
-                  class="group-list-icon"
+                  class="group-list-link__icon"
                 >
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
 
-              <h3 class="title-text">Увага до деталей</h3>
-              <p class="text-text">
+              <h3 class="text__title">Увага до деталей</h3>
+              <p class="text__text">
                 Ідейні міркування, навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
 
-            <li class="text-item">
+            <li class="text__item">
               <div class="group-list-link">
-                <svg lang="en" aria-label="clock icon" class="group-list-icon">
+                <svg
+                  lang="en"
+                  aria-label="clock icon"
+                  class="group-list-link__icon"
+                >
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="title-text">Пунктуальність</h3>
-              <p class="text-text">
+              <h3 class="text__title">Пунктуальність</h3>
+              <p class="text__text">
                 Завдання організації, особливо рамки та місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
 
-            <li class="text-item">
+            <li class="text__item">
               <div class="group-list-link">
                 <svg
                   lang="en"
                   aria-label="diagram icon"
-                  class="group-list-icon"
+                  class="group-list-link__icon"
                 >
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="title-text">Планування</h3>
-              <p class="text-text">
+              <h3 class="text__title">Планування</h3>
+              <p class="text__text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
 
-            <li class="text-item">
+            <li class="text__item">
               <div class="group-list-link">
                 <svg
                   lang="en"
                   aria-label="astronaut icon"
-                  class="group-list-icon"
+                  class="group-list-link__icon"
                 >
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="title-text">Сучасні технології</h3>
-              <p class="text-text">
+              <h3 class="text__title">Сучасні технології</h3>
+              <p class="text__text">
                 Значимість цих проблем настільки очевидна, що реалізація
                 планових завдань.
               </p>
@@ -512,11 +513,11 @@
     <footer id="contacts" class="page-footer">
       <div class="container container-footer">
         <div class="footer">
-          <a class="logo-footer link" href="./index.html"
+          <a class="footer-logo link" href="./index.html"
             ><span class="logo3">Web</span><span class="logo4">Studio</span></a
           >
           <ul class="footer list">
-            <li class="footer-item">
+            <li class="footer__item">
               <a
                 class="maps link"
                 href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
@@ -525,13 +526,13 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li class="footer-item">
-              <a class="contact-email1 link" href="mailto:info@devstudio.com"
+            <li class="footer__item">
+              <a class="footer__email1 link" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="footer-item">
-              <a class="contact-phone-number1 link" href="tel:+380961111111"
+            <li class="footer__item">
+              <a class="footer__phone1 link" href="tel:+380961111111"
                 >+38 096 111 11 11</a
               >
             </li>
