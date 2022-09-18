@@ -471,7 +471,7 @@ body {
   margin-bottom: 30px;
 }
 
-.modal-open-btn {
+.hero__modal-open-btn {
   font-weight: 700;
   font-style: normal;
   font-size: 16px;
@@ -492,7 +492,7 @@ body {
   cursor: pointer;
   transition: background-color var(--transition-dur-and-func), box-shadow var(--transition-dur-and-func);
 }
-.modal-open-btn:hover, .modal-open-btn:focus {
+.hero__modal-open-btn:hover, .hero__modal-open-btn:focus {
   background-color: var(--accent-font-active);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
